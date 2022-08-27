@@ -6,8 +6,15 @@
 }
 
 .caption {
+  color: #444955;
+  font-family: Epilogue , sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
   height: 36px;
   left: 131px;
+  line-height: 29px;
+  position: absolute;
   top: 122px;
   width: 355px;
 }

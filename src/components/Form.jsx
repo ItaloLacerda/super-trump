@@ -30,6 +30,9 @@ export default class Form extends Component {
           LABEL="Nome"
         />
         <Textarea
+          classTitle="cardDescription-title"
+          classLabel="cardDescription-label"
+          classTextArea="cardDescription-textArea"
           type="text"
           data="description-input"
           LABEL="Descrição"

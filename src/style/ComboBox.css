@@ -1,0 +1,41 @@
+.cardRare-title {
+    position: absolute;
+    left: 0%;
+    right: 85.07%;
+    top: 0%;
+    bottom: 0%;
+    margin: 0;
+  
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+  
+    color: #3D495C;
+}
+
+.cardRare-label {
+  display: flex;
+  align-items: center;
+  
+  position: absolute;
+  width: 355px;
+  height: 69px;
+  left: 0;
+  top: 511px;
+}
+
+.cardRare-select {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+  
+    position: absolute;
+    top: 40%;
+    width: 98%;
+    height: 37px;
+  
+    background: #FFFFFF;
+}

@@ -1,0 +1,115 @@
+.card-name-title {
+  bottom: 0%;
+  color: rgb(61, 73, 92);
+  font-family: Verdana , sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  left: 0%;
+  line-height: 150%;
+  margin: 0;
+  position: absolute;
+  right: 85.07%;
+  top: 0%;
+}
+
+.card-name-label {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 69px;
+  left: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 355px;
+}
+
+.card-name-input {
+  align-items: center;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  height: 37px;
+  padding: 0;
+  position: absolute;
+  top: 40%;
+  width: 98%;
+}
+
+.cardAttr1-label {
+  top: 209px;
+}
+
+.cardAttr2-label {
+  top: 261px;
+}
+
+.cardAttr3-label {
+  top: 313px;
+}
+
+.cardImage-label {
+  top: 454px;
+}
+
+.cardTrunfo-label {
+  display: flex;
+  height: 28px;
+  left: 0;
+  position: absolute;
+  top: 604px;
+  width: 460px;
+}
+
+.cardTrunfo-title {
+  bottom: -14.29%;
+  color: rgb(61, 73, 92);
+  font-family: Verdana , sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  left: 10%;
+  line-height: 150%;
+  margin: 0;
+  position: absolute;
+  right: 0%;
+  top: 15%;
+}
+
+.cardTrunfo-input {
+  width: 20px;
+}
+
+.cardAttr1-title, .cardAttr2-title, .cardAttr3-title, .cardImage-title {
+  bottom: 88.84%;
+  color: rgb(61, 73, 92);
+  font-family: Verdana , sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  right: 86.74%;
+}
+
+.cardAttr1-input, .cardAttr2-input, .cardAttr3-input, .cardImage-input {
+  background: white;
+  border: 1px solid rgb(41, 49, 61);
+  border-radius: 2px;
+  box-sizing: border-box;
+  height: 37px;
+  left: 54px;
+  position: absolute;
+  width: 275px;
+}
+
+.cardAttr1-label, .cardAttr2-label, .cardAttr3-label, .cardImage-label {
+  align-items: center;
+  display: flex;
+  height: 69px;
+  left: 0;
+  position: absolute;
+  width: 355px;
+}
+

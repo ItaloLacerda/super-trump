@@ -6,6 +6,8 @@ import Textarea from './Textarea';
 import ComboBox from './ComboBox';
 import Button from './Button';
 
+import '../style/Form.css';
+
 export default class Form extends Component {
   render() {
     const {
@@ -96,7 +98,9 @@ export default class Form extends Component {
           value={ cardRare }
           onChange={ onInputChange }
         />
-        {hasTrunfo ? <p>Você já tem um Super Trunfo em seu baralho</p> : <Input
+        {hasTrunfo ? (
+          <p className="cardTrunfo-text">Você já tem um Super Trunfo em seu baralho</p>
+        ) : <Input
           classTitle="cardTrunfo-title"
           classLabel="cardTrunfo-label"
           classImput="cardTrunfo-input"
@@ -110,6 +114,7 @@ export default class Form extends Component {
           onClick={ onSaveButtonClick }
         /> }
         <Button
+          classButton="save-button"
           data="save-button"
           disabled={ isSaveButtonDisabled }
           onClick={ onSaveButtonClick }

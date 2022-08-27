@@ -1,0 +1,9 @@
+.save-button {
+  align-items: center;
+  background: rgb(0, 59, 229);
+  border-radius: 2px;
+  bottom: 0;
+  height: 40px;
+  position: absolute;
+  width: 115px;
+}

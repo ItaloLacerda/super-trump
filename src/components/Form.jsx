@@ -74,6 +74,9 @@ export default class Form extends Component {
           onChange={ onInputChange }
         />
         <Input
+          classTitle="cardImage-title"
+          classLabel="cardImage-label"
+          classImput="cardImage-input"
           type="text"
           data="image-input"
           LABEL="Imagem"
@@ -82,14 +85,21 @@ export default class Form extends Component {
           onChange={ onInputChange }
         />
         <ComboBox
+          classTitle="cardRare-title"
+          classLabel="cardRare-label"
+          classselect="cardRare-select"
           id="Raridade"
           data="rare-input"
+          LABEL="Raridade"
           name="cardRare"
           options={ options }
           value={ cardRare }
           onChange={ onInputChange }
         />
         {hasTrunfo ? <p>Você já tem um Super Trunfo em seu baralho</p> : <Input
+          classTitle="cardTrunfo-title"
+          classLabel="cardTrunfo-label"
+          classImput="cardTrunfo-input"
           type="checkbox"
           data="trunfo-input"
           LABEL="Super Trybe Trunfo"

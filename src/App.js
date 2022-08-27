@@ -5,6 +5,8 @@ import ComboBox from './components/ComboBox';
 import Form from './components/Form';
 import Input from './components/Input';
 
+import './App.css';
+
 class App extends React.Component {
   state = {
     cardName: '',
@@ -159,17 +161,20 @@ class App extends React.Component {
     return (
       <div>
         <h1>Tryunfo</h1>
-        <section>
-          <Form
-            onInputChange={ this.onInputChange }
-            onSaveButtonClick={ this.onSaveButtonClick }
-            { ...this.state }
-          />
-        </section>
-        <section>
-          <Card
-            { ...this.state }
-          />
+        <section className="letter-generator">
+          <section className="letter-forms">
+            <h2 className="caption">Adiciona Nova Carta</h2>
+            <Form
+              onInputChange={ this.onInputChange }
+              onSaveButtonClick={ this.onSaveButtonClick }
+              { ...this.state }
+            />
+          </section>
+          <section className="letter-preview">
+            <Card
+              { ...this.state }
+            />
+          </section>
         </section>
         <section>
           <Input

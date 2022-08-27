@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import '../style/TextInput.css';
 
 export default class Input extends Component {
   render() {
     const { LABEL, type, data, value,
-      onChange, checked, name, filterDisabled } = this.props;
+      onChange, checked, name, filterDisabled,
+      classLabel, classTitle, classImput } = this.props;
 
     return (
-      <label htmlFor={ LABEL }>
-        {LABEL}
+      <label htmlFor={ LABEL } className={ classLabel }>
+        <h4 className={ classTitle }>{LABEL}</h4>
         <input
+          className={ classImput }
           type={ type }
           id={ LABEL }
           name={ name }
@@ -30,6 +33,9 @@ Input.propTypes = {
   data: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
+  classTitle: PropTypes.string.isRequired,
+  classImput: PropTypes.string.isRequired,
+  classLabel: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   checked: PropTypes.bool.isRequired,
   filterDisabled: PropTypes.bool.isRequired,

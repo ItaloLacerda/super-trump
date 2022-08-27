@@ -17,7 +17,11 @@ export default class Form extends Component {
     const options = ['normal', 'raro', 'muito raro'];
     return (
       <>
+        {/* classLabel, classTitle, classImput */}
         <Input
+          classTitle="card-name-title"
+          classLabel="card-name-label"
+          classImput="card-name-input"
           type="text"
           data="name-input"
           value={ cardName }
@@ -34,6 +38,9 @@ export default class Form extends Component {
           onChange={ onInputChange }
         />
         <Input
+          classTitle="cardAttr1-title"
+          classLabel="cardAttr1-label"
+          classImput="cardAttr1-input"
           type="number"
           data="attr1-input"
           LABEL="Attr01"
@@ -42,6 +49,9 @@ export default class Form extends Component {
           onChange={ onInputChange }
         />
         <Input
+          classTitle="cardAttr2-title"
+          classLabel="cardAttr2-label"
+          classImput="cardAttr2-input"
           type="number"
           data="attr2-input"
           LABEL="Attr02"
@@ -50,6 +60,9 @@ export default class Form extends Component {
           onChange={ onInputChange }
         />
         <Input
+          classTitle="cardAttr3-title"
+          classLabel="cardAttr3-label"
+          classImput="cardAttr3-input"
           type="number"
           data="attr3-input"
           LABEL="Attr03"

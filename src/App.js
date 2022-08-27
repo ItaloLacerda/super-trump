@@ -164,11 +164,13 @@ class App extends React.Component {
         <section className="letter-generator">
           <section className="letter-forms">
             <h2 className="caption">Adiciona Nova Carta</h2>
-            <Form
-              onInputChange={ this.onInputChange }
-              onSaveButtonClick={ this.onSaveButtonClick }
-              { ...this.state }
-            />
+            <div className="container-forms-style">
+              <Form
+                onInputChange={ this.onInputChange }
+                onSaveButtonClick={ this.onSaveButtonClick }
+                { ...this.state }
+              />
+            </div>
           </section>
           <section className="letter-preview">
             <Card

@@ -6,14 +6,14 @@ import '../style/Textarea.css';
 export default class Textarea extends Component {
   render() {
     const { LABEL, type, data, value, onChange, name,
-      classTextArea, classLabel, classTitle } = this.props;
-
+      classTextArea, classLabel, classTitle, maxLength } = this.props;
     return (
 
       <label htmlFor={ LABEL } className={ classLabel }>
         <h4 className={ classTitle }>{LABEL}</h4>
         <textarea
           rows="4"
+          maxLength={ maxLength }
           className={ classTextArea }
           type={ type }
           id={ LABEL }
@@ -28,6 +28,7 @@ export default class Textarea extends Component {
 }
 
 Textarea.propTypes = {
+  maxLength: PropTypes.string.isRequired,
   LABEL: PropTypes.string.isRequired,
   classLabel: PropTypes.string.isRequired,
   classTitle: PropTypes.string.isRequired,

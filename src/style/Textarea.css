@@ -1,8 +1,5 @@
 .cardDescription-label {
   height: 108px;
-  left: 0;
-  position: absolute;
-  top: 88px;
   width: 355px;
 }
 
@@ -12,18 +9,12 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  left: 0%;
   line-height: 150%;
   margin: 0;
-  position: absolute;
-  top: 0%;
 }
 
 .cardDescription-textArea {
   background: white;
   bottom: 0%;
-  left: 0%;
-  position: absolute;
   right: 0%;
-  top: 23%;
 }

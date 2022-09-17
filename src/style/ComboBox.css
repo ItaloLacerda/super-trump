@@ -1,36 +1,36 @@
-.cardRare-title {
+.cardRare-title, .filterRare-title {
   bottom: 0%;
   color: rgb(61, 73, 92);
   font-family: Verdana , sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  left: 0%;
+  /* left: 0%; */
   line-height: 150%;
   margin: 0;
-  position: absolute;
+  /* position: absolute; */
   right: 85.07%;
-  top: 0%;
+  /* top: 0%; */
 }
 
-.cardRare-label {
+.cardRare-label, .filterRare-label {
   align-items: center;
   display: flex;
   height: 69px;
-  left: 0;
-  position: absolute;
-  top: 511px;
+  /* position: absolute; */
   width: 355px;
 }
 
-.cardRare-select {
+.cardRare-select, .filterRare-select {
   align-items: center;
   background: white;
+  border: 1px solid rgb(61, 73, 92);
+  border-radius: 6px;
   display: flex;
   flex-direction: row;
-  height: 37px;
+  height: 65%;
   padding: 0;
-  position: absolute;
-  top: 40%;
+  /* position: absolute; */
+  /* top: 40%; */
   width: 98%;
 }

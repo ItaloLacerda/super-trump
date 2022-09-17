@@ -10,7 +10,7 @@ export default class Input extends Component {
 
     return (
       <label htmlFor={ LABEL } className={ classLabel }>
-        <h4 className={ classTitle }>{LABEL}</h4>
+        <h3 className={ classTitle }>{LABEL}</h3>
         <input
           className={ classImput }
           type={ type }

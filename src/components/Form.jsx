@@ -36,6 +36,7 @@ export default class Form extends Component {
           classLabel="cardDescription-label"
           classTextArea="cardDescription-textArea"
           type="text"
+          maxLength="178"
           data="description-input"
           LABEL="Descrição"
           name="cardDescription"

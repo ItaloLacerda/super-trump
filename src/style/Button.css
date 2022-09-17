@@ -1,9 +1,22 @@
-.save-button {
+.save-button, .delete-button {
   align-items: center;
-  background: rgb(0, 59, 229);
   border-radius: 2px;
-  bottom: 0;
+  font-family: Verdana , sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
   height: 40px;
-  position: absolute;
+  line-height: 150%;
   width: 115px;
+}
+
+.save-button {
+  background: rgb(0, 59, 229);
+  bottom: 0;
+  color: white;
+  position: absolute;
+}
+
+.delete-button {
+  top: 583px;
 }

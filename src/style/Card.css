@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+.background-cart {
+  /* background: rgb(3, 107, 82); */
+  background: linear-gradient(to bottom, rgb(3, 107, 82)6%, white 6%);
+  border-radius: 10px;
+  height: 529px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: solid;
+  border-width: 19px 15px 14px 16px;
+  border-color: rgb(3, 107, 82);
+}
+
+.container-name {
+  background: #023031;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  height: 40px;
+  margin: 0;
+  width: 100%;
+  padding: 0 2%;
+  display: flex;
+  align-items: center;
+}
+
+.container-image {
+  height: 238px;
+  width: 100%;
+}
+
+.container-attr {
+  background: white;
+  border-radius: 0 0 10px 10px;
+  height: 237px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}

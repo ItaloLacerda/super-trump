@@ -19,7 +19,6 @@ export default class Form extends Component {
     const options = ['normal', 'raro', 'muito raro'];
     return (
       <>
-        {/* classLabel, classTitle, classImput */}
         <Input
           classTitle="card-name-title"
           classLabel="card-name-label"

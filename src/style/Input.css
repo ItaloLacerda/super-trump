@@ -26,7 +26,7 @@
   top: 238px;
 }
 
-.card-name-input, .filter-name-input {
+.card-name-input {
   align-items: center;
   background: white;
   border-color: rgb(61, 73, 80);
@@ -40,6 +40,15 @@
   width: 90%;
 }
 
+.filter-name-input {
+  background: white;
+  border: 1px solid rgb(61, 73, 80);
+  border-radius: 6px;
+  height: 65%;
+  margin-left: 0.1em;
+  width: 86%;
+}
+
 .cardTrunfo-label, .checkboxFilte-label {
   display: flex;
   height: 28px;
@@ -51,8 +60,7 @@
 }
 
 .checkboxFilte-label {
-  left: 131px;
-  top: 390px;
+  margin-top: 0.42em;
 }
 
 .cardTrunfo-title, .checkboxFilte-title {
@@ -68,7 +76,8 @@
 }
 
 .cardTrunfo-input, .checkboxFilte-input {
-  width: 20px;
+  margin-left: 1.36em;
+  width: 18px;
 }
 
 .cardAttr1-title, .cardAttr2-title, .cardAttr3-title, .cardImage-title {
@@ -116,4 +125,3 @@
 .cardAttr1-label {
   margin-top: 5%;
 }
-

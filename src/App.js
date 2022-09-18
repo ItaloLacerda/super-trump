@@ -161,7 +161,6 @@ class App extends React.Component {
 
     return (
       <div>
-        <h1>Tryunfo</h1>
         <section className="letter-generator">
           <section className="letter-forms">
             <h2 className="caption-Form">Adiciona Nova Carta</h2>
@@ -184,35 +183,36 @@ class App extends React.Component {
         </section>
         <section className="deck-of-cards">
           <h2 className="caption-Deck">Todas As Cartas</h2>
-          <Input
-            classLabel="filter-name-label"
-            classImput="filter-name-input"
-            classTitle="filter-name-title"
-            LABEL="Filtros De Busca"
-            type="text"
-            data="name-filter"
-            filterDisabled={ filterDisabled }
-            onChange={ this.filtersLetter }
-          />
-          <ComboBox
-            classTitle="filterRare-title"
-            classLabel="filterRare-label"
-            classselect="filterRare-select"
-            filterDisabled={ filterDisabled }
-            data="rare-filter"
-            options={ ['todas', 'normal', 'raro', 'muito raro'] }
-            onChange={ this.filterRarity }
-          />
-          <Input
-            classTitle="checkboxFilte-title"
-            classLabel="checkboxFilte-label"
-            classImput="checkboxFilte-input"
-            type="checkbox"
-            LABEL="Super Trunfo"
-            data="trunfo-filter"
-            onChange={ this.trunfoFilte }
-          />
-
+          <div className="conteiner-filterForms">
+            <Input
+              classLabel="filter-name-label"
+              classImput="filter-name-input"
+              classTitle="filter-name-title"
+              LABEL="Filtros De Busca"
+              type="text"
+              data="name-filter"
+              filterDisabled={ filterDisabled }
+              onChange={ this.filtersLetter }
+            />
+            <ComboBox
+              classTitle="filterRare-title"
+              classLabel="filterRare-label"
+              classselect="filterRare-select"
+              filterDisabled={ filterDisabled }
+              data="rare-filter"
+              options={ ['todas', 'normal', 'raro', 'muito raro'] }
+              onChange={ this.filterRarity }
+            />
+            <Input
+              classTitle="checkboxFilte-title"
+              classLabel="checkboxFilte-label"
+              classImput="checkboxFilte-input"
+              type="checkbox"
+              LABEL="Super Trunfo"
+              data="trunfo-filter"
+              onChange={ this.trunfoFilte }
+            />
+          </div>
           <section className="containeres-deck">
             {deckOfCards.map((element, index) => (
               <div key={ element.cardName } className="container-cart">

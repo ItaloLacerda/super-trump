@@ -38,6 +38,7 @@
   align-items: center;
   display: flex;
   height: 69px;
+  margin-top: 1.35em;
   width: 355px;
 }
 
@@ -50,7 +51,7 @@
   flex-direction: row;
   height: 65%;
   padding: 0;
-  width: 98%;
+  width: 86%;
 }
 
 .cardRare-select {

@@ -15,10 +15,10 @@
   border-radius: 10px;
   display: flex;
   height: 30.74px;
-  left: 24px;
-  width: 284px;
   justify-content: space-between;
+  left: 24px;
   padding-left: 1em;
+  width: 284px;
 }
 
 .attr1-card {
@@ -73,12 +73,12 @@
 .conteiner-description-card {
   background-color: #036b52;
   height: 70px;
+  max-height: 3.5em;
+  max-width: 21.3em;
   position: relative;
   top: -1.3em;
   transform: rotate(-6.92deg);
   width: 345px;
-  max-height: 3.5em;
-  max-width: 21.3em;
 }
 
 .description-card {
@@ -88,8 +88,8 @@
   font-style: normal;
   font-weight: 300;
   line-height: 13px;
-  max-width: 90%;
-  max-height: 100%;
   margin: auto;
+  max-height: 100%;
+  max-width: 90%;
 
 }

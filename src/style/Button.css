@@ -12,9 +12,9 @@
 
 .save-button {
   background: rgb(0, 59, 229);
-  bottom: 0;
   color: white;
-  position: absolute;
+  margin-top: 6em;
+  padding: 0.5em;
 }
 
 .delete-button {

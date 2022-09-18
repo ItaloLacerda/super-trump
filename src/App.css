@@ -1,0 +1,108 @@
+.caption-Form, .caption-Deck {
+  color: #444955;
+  font-family: Epilogue , sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  height: 36px;
+  line-height: 29px;
+  width: 355px;
+}
+
+.caption-Form {
+  margin: 2.8em;
+  width: 100%;
+}
+
+.caption-Deck {
+  margin-left: 4.81em;
+  margin-top: 5.7em;
+  width: 100%;
+}
+
+.letter-generator {
+  background-color: rgb(250, 250, 250);
+  display: flex;
+  width: 100%;
+}
+
+.container-forms-style {
+  display: flex;
+  flex-direction: column;
+  height: 734px;
+  width: 398px;
+}
+
+.letter-preview {
+  align-content: center;
+  align-items: center;
+  background: #023031;
+  display: flex;
+  flex-flow: column wrap;
+  height: 1056px;
+  width: 53%;
+}
+
+.letter-forms {
+  align-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 47%;
+}
+
+
+.preview-title {
+  color: white;
+  font-family: Epilogue , sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0.8em;
+  margin: 2.8em;
+  margin-left: 0.3em;
+  width: 61.5%;
+}
+
+.container-cart-style, .containeres-carts-style {
+  background: white;
+  border: 10px solid white;
+  border-radius: 10px;
+  box-shadow: 0 1px 10px #00000087;
+  display: flex;
+  flex-direction: column;
+  height: 549px;
+  width: 368px;
+}
+
+.container-cart {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 634px;
+  justify-content: space-evenly;
+  margin-left: 1.05em;
+  margin-top: 1.59em;
+  width: 390px;
+}
+
+.containeres-deck {
+  align-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  height: 96%;
+  margin-left: -5.55em;
+  width: 51em;
+}
+
+.deck-of-cards {
+  background-color: rgb(250, 250, 250);
+  display: flex;
+  flex-wrap: wrap;
+  height: 2391px;
+}
+
+.conteiner-filterForms {
+  margin-bottom: 131em;
+  margin-left: 8.7em;
+}

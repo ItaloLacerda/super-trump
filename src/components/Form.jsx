@@ -6,6 +6,8 @@ import Textarea from './Textarea';
 import ComboBox from './ComboBox';
 import Button from './Button';
 
+import '../style/Form.css';
+
 export default class Form extends Component {
   render() {
     const {
@@ -18,6 +20,9 @@ export default class Form extends Component {
     return (
       <>
         <Input
+          classTitle="card-name-title"
+          classLabel="card-name-label"
+          classImput="card-name-input"
           type="text"
           data="name-input"
           value={ cardName }
@@ -25,8 +30,13 @@ export default class Form extends Component {
           onChange={ onInputChange }
           LABEL="Nome"
         />
+
         <Textarea
+          classTitle="cardDescription-title"
+          classLabel="cardDescription-label"
+          classTextArea="cardDescription-textArea"
           type="text"
+          maxLength="178"
           data="description-input"
           LABEL="Descrição"
           name="cardDescription"
@@ -34,6 +44,9 @@ export default class Form extends Component {
           onChange={ onInputChange }
         />
         <Input
+          classTitle="cardAttr1-title"
+          classLabel="cardAttr1-label"
+          classImput="cardAttr1-input"
           type="number"
           data="attr1-input"
           LABEL="Attr01"
@@ -42,6 +55,9 @@ export default class Form extends Component {
           onChange={ onInputChange }
         />
         <Input
+          classTitle="cardAttr2-title"
+          classLabel="cardAttr2-label"
+          classImput="cardAttr2-input"
           type="number"
           data="attr2-input"
           LABEL="Attr02"
@@ -50,6 +66,9 @@ export default class Form extends Component {
           onChange={ onInputChange }
         />
         <Input
+          classTitle="cardAttr3-title"
+          classLabel="cardAttr3-label"
+          classImput="cardAttr3-input"
           type="number"
           data="attr3-input"
           LABEL="Attr03"
@@ -58,6 +77,9 @@ export default class Form extends Component {
           onChange={ onInputChange }
         />
         <Input
+          classTitle="cardImage-title"
+          classLabel="cardImage-label"
+          classImput="cardImage-input"
           type="text"
           data="image-input"
           LABEL="Imagem"
@@ -66,14 +88,23 @@ export default class Form extends Component {
           onChange={ onInputChange }
         />
         <ComboBox
+          classTitle="cardRare-title"
+          classLabel="cardRare-label"
+          classselect="cardRare-select"
           id="Raridade"
           data="rare-input"
+          LABEL="Raridade"
           name="cardRare"
           options={ options }
           value={ cardRare }
           onChange={ onInputChange }
         />
-        {hasTrunfo ? <p>Você já tem um Super Trunfo em seu baralho</p> : <Input
+        {hasTrunfo ? (
+          <p className="cardTrunfo-text">Você já tem um Super Trunfo em seu baralho</p>
+        ) : <Input
+          classTitle="cardTrunfo-title"
+          classLabel="cardTrunfo-label"
+          classImput="cardTrunfo-input"
           type="checkbox"
           data="trunfo-input"
           LABEL="Super Trybe Trunfo"
@@ -84,6 +115,7 @@ export default class Form extends Component {
           onClick={ onSaveButtonClick }
         /> }
         <Button
+          classButton="save-button"
           data="save-button"
           disabled={ isSaveButtonDisabled }
           onClick={ onSaveButtonClick }

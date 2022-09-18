@@ -5,13 +5,15 @@ import ComboBox from './components/ComboBox';
 import Form from './components/Form';
 import Input from './components/Input';
 
+import './App.css';
+
 class App extends React.Component {
   state = {
     cardName: '',
     cardDescription: '',
-    cardAttr1: '',
-    cardAttr2: '',
-    cardAttr3: '',
+    cardAttr1: 0,
+    cardAttr2: 0,
+    cardAttr3: 0,
     cardImage: '',
     cardRare: 'normal',
     cardTrunfo: false,
@@ -55,6 +57,7 @@ class App extends React.Component {
   onInputChange = ({ target }) => {
     const { value, name, type, checked } = target;
     const { hasTrunfo } = this.state;
+
     this.setState({ [name]: value }, () => {
       if (!this.isButtonDisabled()) {
         this.setState({ isSaveButtonDisabled: true });
@@ -158,59 +161,83 @@ class App extends React.Component {
 
     return (
       <div>
-        <h1>Tryunfo</h1>
-        <section>
-          <Form
-            onInputChange={ this.onInputChange }
-            onSaveButtonClick={ this.onSaveButtonClick }
-            { ...this.state }
-          />
-        </section>
-        <section>
-          <Card
-            { ...this.state }
-          />
-        </section>
-        <section>
-          <Input
-            type="text"
-            data="name-filter"
-            filterDisabled={ filterDisabled }
-            onChange={ this.filtersLetter }
-          />
-          <ComboBox
-            filterDisabled={ filterDisabled }
-            data="rare-filter"
-            options={ ['todas', 'normal', 'raro', 'muito raro'] }
-            onChange={ this.filterRarity }
-          />
-          <Input
-            type="checkbox"
-            LABEL="Super Trunfo"
-            data="trunfo-filter"
-            onChange={ this.trunfoFilte }
-          />
-          {deckOfCards.map((element, index) => (
-            <>
+        <section className="letter-generator">
+          <section className="letter-forms">
+            <h2 className="caption-Form">Adiciona Nova Carta</h2>
+            <div className="container-forms-style">
+              <Form
+                onInputChange={ this.onInputChange }
+                onSaveButtonClick={ this.onSaveButtonClick }
+                { ...this.state }
+              />
+            </div>
+          </section>
+          <section className="letter-preview">
+            <h2 className="preview-title">Pré-visualização</h2>
+            <div className="container-cart-style">
               <Card
-                key={ element.cardName }
-                cardName={ element.cardName }
-                cardImage={ element.cardImage }
-                cardDescription={ element.cardDescription }
-                cardAttr1={ element.cardAttr1 }
-                cardAttr2={ element.cardAttr2 }
-                cardAttr3={ element.cardAttr3 }
-                cardRare={ element.cardRare }
-                cardTrunfo={ element.cardTrunfo }
+                { ...this.state }
               />
-              <Button
-                value="Excluir"
-                data="delete-button"
-                onClick={ this.deleteButton }
-                index={ index }
-              />
-            </>
-          ))}
+            </div>
+          </section>
+        </section>
+        <section className="deck-of-cards">
+          <h2 className="caption-Deck">Todas As Cartas</h2>
+          <div className="conteiner-filterForms">
+            <Input
+              classLabel="filter-name-label"
+              classImput="filter-name-input"
+              classTitle="filter-name-title"
+              LABEL="Filtros De Busca"
+              type="text"
+              data="name-filter"
+              filterDisabled={ filterDisabled }
+              onChange={ this.filtersLetter }
+            />
+            <ComboBox
+              classTitle="filterRare-title"
+              classLabel="filterRare-label"
+              classselect="filterRare-select"
+              filterDisabled={ filterDisabled }
+              data="rare-filter"
+              options={ ['todas', 'normal', 'raro', 'muito raro'] }
+              onChange={ this.filterRarity }
+            />
+            <Input
+              classTitle="checkboxFilte-title"
+              classLabel="checkboxFilte-label"
+              classImput="checkboxFilte-input"
+              type="checkbox"
+              LABEL="Super Trunfo"
+              data="trunfo-filter"
+              onChange={ this.trunfoFilte }
+            />
+          </div>
+          <section className="containeres-deck">
+            {deckOfCards.map((element, index) => (
+              <div key={ element.cardName } className="container-cart">
+                <div className="containeres-carts-style">
+                  <Card
+                    cardName={ element.cardName }
+                    cardImage={ element.cardImage }
+                    cardDescription={ element.cardDescription }
+                    cardAttr1={ element.cardAttr1 }
+                    cardAttr2={ element.cardAttr2 }
+                    cardAttr3={ element.cardAttr3 }
+                    cardRare={ element.cardRare }
+                    cardTrunfo={ element.cardTrunfo }
+                  />
+                </div>
+                <Button
+                  classButton="delete-button"
+                  value="Excluir"
+                  data="delete-button"
+                  onClick={ this.deleteButton }
+                  index={ index }
+                />
+              </div>
+            ))}
+          </section>
         </section>
       </div>
     );

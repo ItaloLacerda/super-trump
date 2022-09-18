@@ -1,0 +1,27 @@
+.cardDescription-label {
+  height: 108px;
+  margin-top: 25px;
+  width: 355px;
+}
+
+.cardDescription-title {
+  color: rgb(61, 73, 92);
+  font-family: Verdana , sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin: 0;
+}
+
+.cardDescription-textArea {
+  background: white;
+  border-color: rgb(61, 73, 80);
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  bottom: 0%;
+  height: 80px;
+  right: 0%;
+  width: 90%;
+}

@@ -1,0 +1,95 @@
+.name-card {
+  color: white;
+  font-family: epilogue , sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  text-align: end;
+  width: 322px;
+}
+
+
+.attr1-card, .attr2-card, .attr3-card {
+  align-items: center;
+  background: rgb(218, 220, 223, 1);
+  border-radius: 10px;
+  display: flex;
+  height: 30.74px;
+  justify-content: space-between;
+  left: 24px;
+  padding-left: 1em;
+  width: 284px;
+}
+
+.attr1-card {
+  bottom: 149px;
+}
+
+.attr2-card {
+  bottom: 113px;
+}
+
+.attr3-card {
+  bottom: 77px;
+}
+
+.rare-card {
+  align-items: center;
+  background: #023031;
+  border-radius: 10px;
+  bottom: 41px;
+  color: white;
+  display: flex;
+  font-family: Epilogue , sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  height: 30.74px;
+  justify-content: center;
+  left: 100px;
+  width: 130px;
+}
+
+.attr1, .attr2, .attr3 {
+  font-family: Epilogue , sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.attr1-value, .attr2-value, .attr3-value {
+  align-items: center;
+  background: #023031;
+  border-radius: 0 10px 10px 0;
+  color: white;
+  display: flex;
+  font-family: Epilogue , sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  height: 30.74px;
+  justify-content: center;
+  width: 48px;
+
+}
+
+.conteiner-description-card {
+  background-color: #036b52;
+  height: 70px;
+  max-height: 3.5em;
+  max-width: 21.3em;
+  position: relative;
+  top: -1.3em;
+  transform: rotate(-6.92deg);
+  width: 345px;
+}
+
+.description-card {
+  color: white;
+  font-family: Epilogue , sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 13px;
+  margin: auto;
+  max-height: 100%;
+  max-width: 90%;
+
+}

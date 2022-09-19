@@ -18,5 +18,8 @@
 }
 
 .delete-button {
+  background: white;
+  border: 1px solid rgb(0, 59, 229);
+  color: rgb(0, 59, 229);
   margin-top: 0.75em;
 }

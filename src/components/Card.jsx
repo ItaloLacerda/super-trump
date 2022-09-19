@@ -5,6 +5,7 @@ import Text from './Text';
 import Image from './Image';
 
 import '../style/Card.css';
+import Trunfo from './Trunfo';
 
 export default class Card extends Component {
   render() {
@@ -18,7 +19,7 @@ export default class Card extends Component {
           <Text className="name-card" data="name-card" value={ cardName } />
         </div>
         <div className="container-image">
-          { cardTrunfo && <Text data="trunfo-card" value="Super Trunfo" />}
+          { cardTrunfo && <Trunfo />}
           <Image
             className="image-card"
             data="image-card"
